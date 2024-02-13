@@ -11,8 +11,13 @@
   </head>
   <body>
 
-    <input type="text" placeholder="Search images..."/>
-    <button type="button">Search</button>
+    <form class="form">
+      <input type="text" name="input" placeholder="Search images..."/>
+      <button type="submit">Search</button>
+    </form>
+
+    <span class="loader"></span>
+    <ul class="gallery"></ul>
 
     <script type="module" src="./main.js"></script>
   </body>
