@@ -42,8 +42,9 @@ form.addEventListener('submit', e => {
         })
         .catch(error => {
             iziToast.error({
-                    message: 'Unable to get images',
-                    position: "topRight",
+                message: 'Unable to get images',
+                title: error,
+                position: "topRight",
                 });
         })
         .finally(() => {

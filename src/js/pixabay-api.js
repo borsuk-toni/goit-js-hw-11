@@ -21,6 +21,10 @@ export function getImages(searchValue) {
             return response.json();
         })
         .catch(error => {
-            console.log(error);
+            iziToast.error({
+                message: 'Unable to get images',
+                title: error,
+                position: "topRight",
+                });
         });
 }
